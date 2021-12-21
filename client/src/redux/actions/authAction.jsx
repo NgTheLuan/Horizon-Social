@@ -1,16 +1,13 @@
 import { postData } from "../../utils";
 import { valid } from "../../utils";
-
-export const TYPES = {
-  AUTH: "AUTH",
-};
+import { GLOBALTYPES } from "./globalTypes";
 
 export const login = (data) => async (dispatch) => {
   try {
-    dispatch({ type: "NOTIFY", payload: { loading: true } });
+    dispatch({ type: GLOBALTYPES.ALERT, payload: { loading: true } });
     const res = await postData("login", data);
     dispatch({
-      type: "AUTH",
+      type: GLOBALTYPES.AUTH,
       payload: {
         token: res.data.access_token,
         user: res.data.user,
@@ -18,11 +15,36 @@ export const login = (data) => async (dispatch) => {
     });
     localStorage.setItem("firstLogin", true);
     dispatch({
-      type: "NOTIFY",
+      type: GLOBALTYPES.ALERT,
       payload: {
         sucess: res.data.msg,
       },
     });
+  } catch (err) {
+    dispatch({
+      type: GLOBALTYPES.ALERT,
+      payload: {
+        error: err.response.data.msg,
+      },
+    });
+  }
+};
+
+export const refreshToken = (data) => async (dispatch) => {
+  const firstLogin = localStorage.getItem("firstLogin");
+  if (firstLogin) {
+    dispatch({ type: "NOTIFY", payload: { loading: true } });
+  }
+  try {
+    const res = await postData("refresh_token");
+    dispatch({
+      type: "AUTH",
+      payload: {
+        token: res.data.access_token,
+        user: res.data.user,
+      },
+    });
+    dispatch({ type: "NOTIFY", payload: {} });
   } catch (err) {
     dispatch({
       type: "NOTIFY",
@@ -33,54 +55,32 @@ export const login = (data) => async (dispatch) => {
   }
 };
 
-export const refreshToken = (data) => async (dispatch) => {
-  // const firstLogin = localStorage.getItem("firstLogin");
-  // if (firstLogin) {
-  //   dispatch({ type: "NOTIFY", payload: { loading: true } });
-  // }
-  // try {
-  //   const res = await postData("refresh_token");
-  //   dispatch({
-  //     type: "AUTH",
-  //     payload: {
-  //       token: res.data.access_token,
-  //       user: res.data.user,
-  //     },
-  //   });
-  //   dispatch({ type: "NOTIFY", payload: {} });
-  // } catch (err) {
-  //   dispatch({
-  //     type: "NOTIFY",
-  //     payload: {
-  //       error: err.response.data.msg,
-  //     },
-  //   });
-  // }
-};
-
 export const register = (data) => async (dispatch) => {
+  const check = valid(data);
+  console.log(check);
+  if (check.errLength > 0)
+    return dispatch({ type: GLOBALTYPES.ALERT, payload: check.errMsg });
   try {
-    const check = valid(data);
-    // dispatch({ type: "NOTIFY", payload: { loading: true } });
-    // const res = await postData("login", data);
-    // dispatch({
-    //   type: "AUTH",
-    //   payload: {
-    //     token: res.data.access_token,
-    //     user: res.data.user,
-    //   },
-    // });
-    // localStorage.setItem("firstLogin", true);
-    // dispatch({
-    //   type: "NOTIFY",
-    //   payload: {
-    //     sucess: res.data.msg,
-    //   },
-    // });
-    console.log(check);
+    dispatch({ type: GLOBALTYPES.ALERT, payload: { loading: true } });
+    const res = await postData("register", data);
+    dispatch({
+      type: GLOBALTYPES.AUTH,
+      payload: {
+        token: res.data.access_token,
+        user: res.data.user,
+      },
+    });
+
+    localStorage.setItem("firstLogin", true);
+    dispatch({
+      type: GLOBALTYPES.ALERT,
+      payload: {
+        success: res.data.msg,
+      },
+    });
   } catch (err) {
     dispatch({
-      type: "NOTIFY",
+      type: GLOBALTYPES.ALERT,
       payload: {
         error: err.response.data.msg,
       },

@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { register } from "../redux/actions/authAction";
 
 const Register = () => {
-  const { auth } = useSelector((state) => state);
+  const { auth, alert } = useSelector((state) => state);
   const dispatch = useDispatch();
   const history = useHistory();
 
@@ -14,11 +14,11 @@ const Register = () => {
     username: "",
     email: "",
     password: "",
-    confirmpassword: "",
+    cf_password: "",
     sex: "male",
   };
   const [userData, setUserData] = useState(initialState);
-  const { fullname, username, email, password, confirmpassword } = userData;
+  const { fullname, username, email, password, cf_password } = userData;
 
   const [typePass, setTypePass] = useState(false);
   const [typeConfirmPass, setTypeConfirmPass] = useState(false);
@@ -62,23 +62,31 @@ const Register = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      required="required"
                       name="fullname"
                       value={fullname}
                       onChange={handleChangeInput}
+                      placeholder={alert.fullname ? alert.fullname : ""}
+                      style={{
+                        marginTop: "5px",
+                        background: `${alert.fullname ? "#fd2d6a14" : ""}`,
+                      }}
                     />
                     <label className="control-label" htmlFor="input">
-                      First &amp; Last Name
+                      First &amp; Last Name{" "}
                     </label>
                     <i className="mtrl-select" />
                   </div>
                   <div className="form-group">
                     <input
                       type="text"
-                      required="required"
                       name="username"
                       value={username}
                       onChange={handleChangeInput}
+                      placeholder={alert.username ? alert.username : ""}
+                      style={{
+                        marginTop: "5px",
+                        background: `${alert.username ? "#fd2d6a14" : ""}`,
+                      }}
                     />
                     <label className="control-label" htmlFor="input">
                       User Name
@@ -88,48 +96,58 @@ const Register = () => {
                   <div className="form-group">
                     <input
                       type={typePass ? "text" : "password"}
-                      required="required"
                       name="password"
                       value={password}
                       onChange={handleChangeInput}
+                      placeholder={alert.password ? alert.password : ""}
+                      style={{
+                        marginTop: "5px",
+                        background: `${alert.password ? "#fd2d6a14" : ""}`,
+                      }}
                     />
                     <label className="control-label" htmlFor="input">
                       Password
                     </label>
-                    <i className="mtrl-select" />
                     <small
                       style={{
                         float: "right",
-                        marginTop: "-20px",
+                        marginTop: "-25px",
+                        marginRight: "5px",
                         cursor: "pointer",
                       }}
                       onClick={() => setTypePass(!typePass)}
                     >
                       {typePass ? "hide" : "show"}
                     </small>
+                    <i className="mtrl-select" />
                   </div>
                   <div className="form-group">
                     <input
                       type={typeConfirmPass ? "text" : "password"}
-                      required="required"
-                      name="confirmpassword"
-                      value={confirmpassword}
+                      name="cf_password"
+                      value={cf_password}
                       onChange={handleChangeInput}
+                      placeholder={alert.cf_password ? alert.cf_password : ""}
+                      style={{
+                        marginTop: "5px",
+                        background: `${alert.cf_password ? "#fd2d6a14" : ""}`,
+                      }}
                     />
                     <label className="control-label" htmlFor="input">
                       Confirm Password
                     </label>
-                    <i className="mtrl-select" />
                     <small
                       style={{
                         float: "right",
-                        marginTop: "-20px",
+                        marginTop: "-25px",
+                        marginRight: "5px",
                         cursor: "pointer",
                       }}
                       onClick={() => setTypeConfirmPass(!typeConfirmPass)}
                     >
                       {typeConfirmPass ? "hide" : "show"}
                     </small>
+                    <i className="mtrl-select" />
                   </div>
                   <div className="form-radio">
                     <div className="radio">
@@ -161,10 +179,14 @@ const Register = () => {
                   <div className="form-group">
                     <input
                       type="text"
-                      required="required"
                       name="email"
                       value={email}
                       onChange={handleChangeInput}
+                      placeholder={alert.email ? alert.email : ""}
+                      style={{
+                        marginTop: "5px",
+                        background: `${alert.email ? "#fd2d6a14" : ""}`,
+                      }}
                     />
                     <label className="control-label" htmlFor="input">
                       <a
@@ -188,7 +210,7 @@ const Register = () => {
                     Already have an account
                   </Link>
                   <div className="submit-btns">
-                    <button className="mtr-btn signup" type="submit">
+                    <button className="mtr-btn" type="submit">
                       <span>Register</span>
                     </button>
                   </div>

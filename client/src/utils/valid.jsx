@@ -1,32 +1,32 @@
-const valid = ({ fullname, username, email, password, confirmpassword }) => {
+export const valid = ({ fullname, username, email, password, cf_password }) => {
   const err = {};
 
   if (!fullname) {
-    err.fullname = "Please input your FullName.";
-  } else if (fullname.lenght > 25) {
-    err.fullname = "FullName is up to 25 characters.";
+    err.fullname = "Please input your full name.";
+  } else if (fullname.length > 25) {
+    err.fullname = "Full name is up to 25 characters long.";
   }
 
   if (!username) {
-    err.username = "Please input your UserName.";
-  } else if (fullname.toLowerCase().replace(/ /g, "").lenght > 25) {
-    err.fullname = "UserName is up to 25 characters.";
+    err.username = "Please input your user name.";
+  } else if (username.replace(/ /g, "").length > 25) {
+    err.username = "User name is up to 25 characters long.";
   }
 
   if (!email) {
-    err.email = "Please input your Email.";
+    err.email = "Please input your email.";
   } else if (!validateEmail(email)) {
     err.email = "Email format is incorrect.";
   }
 
   if (!password) {
-    err.password = "Please input your Password.";
-  } else if (password.lenght < 6) {
+    err.password = "Please input your password.";
+  } else if (password.length < 6) {
     err.password = "Password must be at least 6 characters.";
   }
 
-  if (!confirmpassword !== password) {
-    err.confirmpassword = "Confirm Password didn't match";
+  if (password !== cf_password) {
+    err.cf_password = "Confirm password did not match.";
   }
 
   return {

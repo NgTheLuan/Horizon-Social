@@ -12,9 +12,9 @@ function App() {
   const { auth } = useSelector((state) => state);
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   dispatch(refreshToken());
-  // }, [dispatch]);
+  useEffect(() => {
+    dispatch(refreshToken());
+  }, [dispatch]);
 
   return (
     <Router>
