@@ -1,7 +1,8 @@
-function App() {
+import React from "react";
+
+function Home() {
   return (
     <>
-      {/*<div class="se-pre-con"></div>*/}
       <div className="theme-layout">
         <div className="responsive-header">
           <div className="mh-head first Sticky">
@@ -12,8 +13,7 @@ function App() {
             </span>
             <span className="mh-text">
               <a href="newsfeed.html" title>
-                {/* <img src="../assets/images/logo2.png" alt /> */}
-                <h5>Horizon Social</h5>
+                <img src="images/logo2.png" alt />
               </a>
             </span>
             <span className="mh-btns-right">
@@ -490,8 +490,7 @@ function App() {
         <div className="topbar stick">
           <div className="logo">
             <a title href="newsfeed.html">
-              {/* <img src="../assets/images/logo.png" alt /> */}
-              <h5>Horizon Social</h5>
+              <img src="images/logo.png" alt />
             </a>
           </div>
           <div className="top-area">
@@ -714,7 +713,7 @@ function App() {
                   <ul className="drops-menu">
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-1.jpg" alt />
+                        <img src="images/resources/thumb-1.jpg" alt />
                         <div className="mesg-meta">
                           <h6>sarah Loren</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -725,7 +724,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-2.jpg" alt />
+                        <img src="images/resources/thumb-2.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Jhon doe</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -736,7 +735,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-3.jpg" alt />
+                        <img src="images/resources/thumb-3.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Andrew</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -747,7 +746,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-4.jpg" alt />
+                        <img src="images/resources/thumb-4.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Tom cruse</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -758,7 +757,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-5.jpg" alt />
+                        <img src="images/resources/thumb-5.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Amy</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -783,7 +782,7 @@ function App() {
                   <ul className="drops-menu">
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-1.jpg" alt />
+                        <img src="images/resources/thumb-1.jpg" alt />
                         <div className="mesg-meta">
                           <h6>sarah Loren</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -794,7 +793,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-2.jpg" alt />
+                        <img src="images/resources/thumb-2.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Jhon doe</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -805,7 +804,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-3.jpg" alt />
+                        <img src="images/resources/thumb-3.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Andrew</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -816,7 +815,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-4.jpg" alt />
+                        <img src="images/resources/thumb-4.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Tom cruse</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -827,7 +826,7 @@ function App() {
                     </li>
                     <li>
                       <a href="notifications.html" title>
-                        <img src="../assets/images/resources/thumb-5.jpg" alt />
+                        <img src="images/resources/thumb-5.jpg" alt />
                         <div className="mesg-meta">
                           <h6>Amy</h6>
                           <span>Hi, how r u dear ...?</span>
@@ -864,7 +863,7 @@ function App() {
               </li>
             </ul>
             <div className="user-img">
-              <img src="../assets/images/resources/admin.jpg" alt />
+              <img src="images/resources/admin.jpg" alt />
               <span className="status f-online" />
               <div className="user-setting">
                 <a href="#" title>
@@ -942,7 +941,7 @@ function App() {
                             <li>
                               <i className="ti-image" />
                               <a href="timeline-photos.html" title>
-                                ../assets/images
+                                images
                               </a>
                             </li>
                             <li>
@@ -1033,7 +1032,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar2.jpg"
+                                  src="images/resources/friend-avatar2.jpg"
                                   alt
                                 />
                               </figure>
@@ -1051,7 +1050,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar4.jpg"
+                                  src="images/resources/friend-avatar4.jpg"
                                   alt
                                 />
                               </figure>
@@ -1069,7 +1068,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar6.jpg"
+                                  src="images/resources/friend-avatar6.jpg"
                                   alt
                                 />
                               </figure>
@@ -1087,7 +1086,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar8.jpg"
+                                  src="images/resources/friend-avatar8.jpg"
                                   alt
                                 />
                               </figure>
@@ -1105,7 +1104,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar3.jpg"
+                                  src="images/resources/friend-avatar3.jpg"
                                   alt
                                 />
                               </figure>
@@ -1130,10 +1129,7 @@ function App() {
                       <div className="central-meta">
                         <div className="new-postbox">
                           <figure>
-                            <img
-                              src="../assets/images/resources/admin2.jpg"
-                              alt
-                            />
+                            <img src="images/resources/admin2.jpg" alt />
                           </figure>
                           <div className="newpst-input">
                             <form method="post">
@@ -1184,7 +1180,7 @@ function App() {
                             <div className="friend-info">
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar10.jpg"
+                                  src="images/resources/friend-avatar10.jpg"
                                   alt
                                 />
                               </figure>
@@ -1197,10 +1193,7 @@ function App() {
                                 <span>published: june,2 2018 19:PM</span>
                               </div>
                               <div className="post-meta">
-                                <img
-                                  src="../assets/images/resources/user-post.jpg"
-                                  alt
-                                />
+                                <img src="images/resources/user-post.jpg" alt />
                                 <div className="we-video-info">
                                   <ul>
                                     <li>
@@ -1326,7 +1319,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-1.jpg"
+                                      src="images/resources/comet-1.jpg"
                                       alt
                                     />
                                   </div>
@@ -1357,7 +1350,7 @@ function App() {
                                     <li>
                                       <div className="comet-avatar">
                                         <img
-                                          src="../assets/images/resources/comet-2.jpg"
+                                          src="images/resources/comet-2.jpg"
                                           alt
                                         />
                                       </div>
@@ -1391,7 +1384,7 @@ function App() {
                                     <li>
                                       <div className="comet-avatar">
                                         <img
-                                          src="../assets/images/resources/comet-3.jpg"
+                                          src="images/resources/comet-3.jpg"
                                           alt
                                         />
                                       </div>
@@ -1424,7 +1417,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-1.jpg"
+                                      src="images/resources/comet-1.jpg"
                                       alt
                                     />
                                   </div>
@@ -1465,7 +1458,7 @@ function App() {
                                 <li className="post-comment">
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-1.jpg"
+                                      src="images/resources/comet-1.jpg"
                                       alt
                                     />
                                   </div>
@@ -1507,10 +1500,7 @@ function App() {
                           <div className="user-post">
                             <div className="friend-info">
                               <figure>
-                                <img
-                                  src="../assets/images/resources/nearly1.jpg"
-                                  alt
-                                />
+                                <img src="images/resources/nearly1.jpg" alt />
                               </figure>
                               <div className="friend-name">
                                 <ins>
@@ -1655,7 +1645,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-1.jpg"
+                                      src="images/resources/comet-1.jpg"
                                       alt
                                     />
                                   </div>
@@ -1686,7 +1676,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-2.jpg"
+                                      src="images/resources/comet-2.jpg"
                                       alt
                                     />
                                   </div>
@@ -1726,7 +1716,7 @@ function App() {
                                 <li className="post-comment">
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-2.jpg"
+                                      src="images/resources/comet-2.jpg"
                                       alt
                                     />
                                   </div>
@@ -1768,10 +1758,7 @@ function App() {
                           <div className="user-post">
                             <div className="friend-info">
                               <figure>
-                                <img
-                                  src="../assets/images/resources/nearly6.jpg"
-                                  alt
-                                />
+                                <img src="images/resources/nearly6.jpg" alt />
                               </figure>
                               <div className="friend-name">
                                 <ins>
@@ -1915,7 +1902,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-1.jpg"
+                                      src="images/resources/comet-1.jpg"
                                       alt
                                     />
                                   </div>
@@ -1946,7 +1933,7 @@ function App() {
                                 <li>
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-2.jpg"
+                                      src="images/resources/comet-2.jpg"
                                       alt
                                     />
                                   </div>
@@ -1986,7 +1973,7 @@ function App() {
                                 <li className="post-comment">
                                   <div className="comet-avatar">
                                     <img
-                                      src="../assets/images/resources/comet-2.jpg"
+                                      src="images/resources/comet-2.jpg"
                                       alt
                                     />
                                   </div>
@@ -2030,7 +2017,7 @@ function App() {
                               <figure>
                                 <img
                                   alt
-                                  src="../assets/images/resources/friend-avatar10.jpg"
+                                  src="images/resources/friend-avatar10.jpg"
                                 />
                               </figure>
                               <div className="friend-name">
@@ -2055,10 +2042,7 @@ function App() {
                               <div className="post-meta">
                                 <div className="linked-image align-left">
                                   <a title href="#">
-                                    <img
-                                      alt
-                                      src="../assets/images/resources/page1.jpg"
-                                    />
+                                    <img alt src="images/resources/page1.jpg" />
                                   </a>
                                 </div>
                                 <div className="detail">
@@ -2195,7 +2179,7 @@ function App() {
                             <figure>
                               <a href="#" title>
                                 <img
-                                  src="../assets/images/resources/friend-avatar9.jpg"
+                                  src="images/resources/friend-avatar9.jpg"
                                   alt
                                 />
                               </a>
@@ -2254,7 +2238,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-1.jpg"
+                                        src="images/resources/userlist-1.jpg"
                                         alt
                                       />
                                     </a>
@@ -2264,7 +2248,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-2.jpg"
+                                        src="images/resources/userlist-2.jpg"
                                         alt
                                       />
                                     </a>
@@ -2274,7 +2258,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-3.jpg"
+                                        src="images/resources/userlist-3.jpg"
                                         alt
                                       />
                                     </a>
@@ -2284,7 +2268,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-4.jpg"
+                                        src="images/resources/userlist-4.jpg"
                                         alt
                                       />
                                     </a>
@@ -2294,7 +2278,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-5.jpg"
+                                        src="images/resources/userlist-5.jpg"
                                         alt
                                       />
                                     </a>
@@ -2304,7 +2288,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-6.jpg"
+                                        src="images/resources/userlist-6.jpg"
                                         alt
                                       />
                                     </a>
@@ -2314,7 +2298,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-7.jpg"
+                                        src="images/resources/userlist-7.jpg"
                                         alt
                                       />
                                     </a>
@@ -2335,7 +2319,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-1.jpg"
+                                        src="images/resources/userlist-1.jpg"
                                         alt
                                       />
                                     </a>
@@ -2345,7 +2329,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-2.jpg"
+                                        src="images/resources/userlist-2.jpg"
                                         alt
                                       />
                                     </a>
@@ -2355,7 +2339,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-3.jpg"
+                                        src="images/resources/userlist-3.jpg"
                                         alt
                                       />
                                     </a>
@@ -2365,7 +2349,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-4.jpg"
+                                        src="images/resources/userlist-4.jpg"
                                         alt
                                       />
                                     </a>
@@ -2375,7 +2359,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-5.jpg"
+                                        src="images/resources/userlist-5.jpg"
                                         alt
                                       />
                                     </a>
@@ -2385,7 +2369,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-6.jpg"
+                                        src="images/resources/userlist-6.jpg"
                                         alt
                                       />
                                     </a>
@@ -2395,7 +2379,7 @@ function App() {
                                       data-toggle="tooltip"
                                     >
                                       <img
-                                        src="../assets/images/resources/userlist-7.jpg"
+                                        src="images/resources/userlist-7.jpg"
                                         alt
                                       />
                                     </a>
@@ -2412,12 +2396,12 @@ function App() {
                               className="bg-image"
                               style={{
                                 backgroundImage:
-                                  "url(../assets/images/resources/baner-widgetbg.jpg)",
+                                  "url(images/resources/baner-widgetbg.jpg)",
                               }}
                             />
                             <div className="baner-top">
                               <span>
-                                <img alt src="../assets/images/book-icon.png" />
+                                <img alt src="images/book-icon.png" />
                               </span>
                               <i className="fa fa-ellipsis-h" />
                             </div>
@@ -2437,7 +2421,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar.jpg"
+                                  src="images/resources/friend-avatar.jpg"
                                   alt
                                 />
                                 <span className="status f-online" />
@@ -2458,7 +2442,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar2.jpg"
+                                  src="images/resources/friend-avatar2.jpg"
                                   alt
                                 />
                                 <span className="status f-away" />
@@ -2479,7 +2463,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar3.jpg"
+                                  src="images/resources/friend-avatar3.jpg"
                                   alt
                                 />
                                 <span className="status f-off" />
@@ -2500,7 +2484,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar4.jpg"
+                                  src="images/resources/friend-avatar4.jpg"
                                   alt
                                 />
                                 <span className="status f-off" />
@@ -2521,7 +2505,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar5.jpg"
+                                  src="images/resources/friend-avatar5.jpg"
                                   alt
                                 />
                                 <span className="status f-online" />
@@ -2542,7 +2526,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar6.jpg"
+                                  src="images/resources/friend-avatar6.jpg"
                                   alt
                                 />
                                 <span className="status f-away" />
@@ -2563,7 +2547,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar7.jpg"
+                                  src="images/resources/friend-avatar7.jpg"
                                   alt
                                 />
                                 <span className="status f-off" />
@@ -2584,7 +2568,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar5.jpg"
+                                  src="images/resources/friend-avatar5.jpg"
                                   alt
                                 />
                                 <span className="status f-online" />
@@ -2605,7 +2589,7 @@ function App() {
                             <li>
                               <figure>
                                 <img
-                                  src="../assets/images/resources/friend-avatar2.jpg"
+                                  src="images/resources/friend-avatar2.jpg"
                                   alt
                                 />
                                 <span className="status f-away" />
@@ -2642,7 +2626,7 @@ function App() {
                                 <li className="me">
                                   <div className="chat-thumb">
                                     <img
-                                      src="../assets/images/resources/chatlist1.jpg"
+                                      src="images/resources/chatlist1.jpg"
                                       alt
                                     />
                                   </div>
@@ -2665,7 +2649,7 @@ function App() {
                                 <li className="you">
                                   <div className="chat-thumb">
                                     <img
-                                      src="../assets/images/resources/chatlist2.jpg"
+                                      src="images/resources/chatlist2.jpg"
                                       alt
                                     />
                                   </div>
@@ -2688,7 +2672,7 @@ function App() {
                                 <li className="me">
                                   <div className="chat-thumb">
                                     <img
-                                      src="../assets/images/resources/chatlist1.jpg"
+                                      src="images/resources/chatlist1.jpg"
                                       alt
                                     />
                                   </div>
@@ -2757,7 +2741,7 @@ function App() {
                   <div className="foot-logo">
                     <div className="logo">
                       <a href="index-2.html" title>
-                        <img src="../assets/images/logo.png" alt />
+                        <img src="images/logo.png" alt />
                       </a>
                     </div>
                     <p>
@@ -2927,7 +2911,7 @@ function App() {
                   </a>
                 </span>
                 <i>
-                  <img src="../assets/images/credit-cards.png" alt />
+                  <img src="images/credit-cards.png" alt />
                 </i>
               </div>
             </div>
@@ -3009,9 +2993,8 @@ function App() {
           </div>
         </form>
       </div>
-      {/* side panel */}
     </>
   );
 }
 
-export default App;
+export default Home;
